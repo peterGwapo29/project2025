@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World!1</h1>
-    <h1>Hello World!2</h1>
+    <h1>This is another branch</h1>
 </body>
 </html>
