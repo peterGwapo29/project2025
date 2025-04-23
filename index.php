@@ -10,7 +10,7 @@
     <form action="index.php" method="post">
 
     <label>Grade:</label><br>
-    <input type="text" name="grade" placeholder="Enter your grade"><br>
+    <input type="text" name="flp" placeholder="Enter number to loop"><br>
     
     <button type="submit">SUBMIT</button>
     
@@ -21,40 +21,15 @@
 
 <?php
 
-    $grade = $_POST['grade'];
+    $loop = $_POST['flp'];
+    $display = null;
 
-    // if($age < 18) {
-    //     echo "You're an underage";
-    // }elseif($age >= 18 && $age < 60) {
-    //     echo "You're an adult";
-    // }else{
-    //     echo "You're a senior citizen";
-    // }
-
-    echo "<br>";
-    echo "<br>";
-
-    // switch statement
-
-    switch($grade) {
-        case "A":
-            echo "Excellent";
-            break;
-        case "B":
-            echo "Good";
-            break;
-        case "C":
-            echo "Average";
-            break;
-        case "D":
-            echo "Passing";
-            break;
-        case "F":
-            echo "Retake";
-            break;
-        default:
-            echo "Invalid grade";
-            break;
+    for($i = 0; $i < 5; $i++){
+        for($j = $i; $j < 5; $j++){
+            echo $i . " ";
+        }
+        echo "<br>";
     }
+
 
 ?>
