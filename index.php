@@ -9,8 +9,8 @@
 
     <form action="index.php" method="post">
 
-    <label>Grade:</label><br>
-    <input type="text" name="flp" placeholder="Enter number to loop"><br>
+    <label>DAY:</label><br>
+    <input type="text" name="day" placeholder="Enter Day"><br>
     
     <button type="submit">SUBMIT</button>
     
@@ -21,14 +21,11 @@
 
 <?php
 
-    $loop = $_POST['flp'];
-    $display = null;
+    $days = $_POST['day'];
 
-    for($i = 0; $i < 5; $i++){
-        for($j = $i; $j < 5; $j++){
-            echo $i . " ";
-        }
-        echo "<br>";
+    while($i < 5){
+        echo "<br>Day: $days <br>";
+        $i++;
     }
 
 
